@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Resume Here</h1>
+        <form id="resume-form">
+            <div class="form-section">
+                <label for="image">Profile Pictre:</label>
+                <input type="file" id="image" accept="image/*">
+            </div>
+            <div class="form-section">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-section">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-section">
+                <label for="objective">Objective:</label>
+                <textarea id="objective" placeholder="Brief summary or career objective"></textarea>
+            </div>
+            <div class="form-section">
+                <label for="education">Education:</label>
+                <textarea id="education" placeholder="List your degrees, institutions, and graduation dates" required></textarea>
+            </div>
+            <div class="form-section">
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" placeholder="List your skills, separated by commas" required>
+            </div>
+            <div class="form-section">
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Describe your work experience" required></textarea>
+            </div>
+            <div class="form-section">
+                <label for="projects">Projects:</label>
+                <textarea id="projects" placeholder="Briefly describe key projects you've worked on"></textarea>
+            </div>
+            <div class="form-section">
+                <label for="certifications">Certifications:</label>
+                <textarea id="certifications" placeholder="List relevant certifications"></textarea>
+            </div>
+            <div class="form-section">
+                <label for="languages">Languages:</label>
+                <input type="text" id="languages" placeholder="List languages you speak and proficiency" required>
+            </div>
+            <div class="form-section">
+                <label for="hobbies">Hobbies/Interests:</label>
+                <input type="text" id="hobbies" placeholder="List your hobbies or interests" required>
+            </div>
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" class="resume-output">
+            <h2>Your Resume:</h2>
+            <div id="resume" class="resume-content"></div>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
